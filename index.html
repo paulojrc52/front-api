@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Listagem de Produtos</h2>
+
+    <ul id="products-list"></ul>
+
+    <div id="add">
+        <hr>
+
+        <h2>Cadastro de Produtos</h2>
+        <form id="form">
+            <div>
+                <label>Nome</label>
+                <input type="text" name="name">
+            </div> 
+            <div>
+                <label>Marca</label>
+                <input type="text" name="brand">
+            </div>
+            <div>
+                <label>Preço</label>
+                <input type="text" name="price">
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    
+
+    <div class="hidden" id="edit">
+        <hr>
+
+        <h2>Alterar Produto</h2>
+
+        <form id="formEdit">
+            <input type="hidden" name="id">
+            <div>
+                <label>Nome</label>
+                <input type="text" name="name">
+            </div> 
+            <div>
+                <label>Marca</label>
+                <input type="text" name="brand">
+            </div>
+            <div>
+                <label>Preço</label>
+                <input type="text" name="price">
+            </div>
+            <div>
+                <button type="submit">Alterar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
